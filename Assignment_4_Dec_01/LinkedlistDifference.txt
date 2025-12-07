@@ -1,0 +1,12 @@
+ArrayList and LinkedList are both used to store a group of objects, but they work internally in very different ways.
+ArrayList is based on a dynamic array, which means all elements are stored in continuous memory locations.
+Because of this, accessing elements using an index (like get(5)) is very fast.
+However, inserting or deleting elements in the middle is slow because the remaining elements must be shifted.
+On the other hand, LinkedList is built using a doubly linked list, where each element (node) stores the data along with the reference to the previous and next node.
+This makes insertion and deletion very fast, especially in the beginning or middle, because it simply updates links without shifting elements.
+But accessing an element by index is slow, as it has to traverse the list from the start or end.
+
+In simple terms, you should use ArrayList when your main requirement is fast access or reading data frequently, because get and set operations are very efficient.
+LinkedList should be used when your program frequently adds or removes elements from the middle or beginning of the list.
+ArrayList is memory efficient, while LinkedList uses more memory due to storing extra links.
+So the choice depends on the operation: choose ArrayList for fast access, choose LinkedList for fast insertions and deletions.
