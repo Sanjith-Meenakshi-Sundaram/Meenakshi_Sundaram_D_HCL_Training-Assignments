@@ -1,0 +1,11 @@
+a.	sendKeys() - types text into an input field or area
+b.	clear() - clears the text from an input field
+c.	click() - performs a mouse click on a the page
+d.	findElement() - find and returns the first matchigng element
+e.	findElements() - returns a list of all matching elements
+f.	getDomAttribute() - get the value of an attribute from the DOM (even if not visible in HTML)
+g.	getScreenShotAs() - take screenshot of an element and returns it as a file
+h.	getText() - returns visible text of the element
+i.	isDisplayed() - checks if element is visible on the page
+j.	isEnabled() - checks if element is enabled for user interaction
+k.	isSelected() - checks if a checkbox or radio button is selected

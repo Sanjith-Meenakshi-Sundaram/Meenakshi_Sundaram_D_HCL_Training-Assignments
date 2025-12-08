@@ -1,0 +1,11 @@
+a.	get() - loads a new webpage in the current browser window
+b.	getCurrentURL() - return the URL of the page that the browser is currently on
+c.	getPageSource() - Returns the HTML source code of the current webpage
+d.	getTitle() - returns title
+e.	close() vs quit() :
+close - close the current browser window
+quit - close all the broswer windows & end webdriver session
+f.	getWindowHandle() - returns unique id of the current active browser window
+g.	getWindowHandles() - return ids of all open browser windows
+h.	navitate() - provides navigation methods like back, forward, refresh, top.
+i.	switchTo() - switches focuses to alerts windows or active elements
