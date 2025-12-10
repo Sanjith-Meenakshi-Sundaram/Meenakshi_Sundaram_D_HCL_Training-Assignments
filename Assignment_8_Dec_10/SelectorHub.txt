@@ -1,0 +1,10 @@
+SelectorsHub is a browser extension used by testers to easily find and write XPath and CSS selectors for web elements.
+It helps automation testers by showing the correct locator without manually inspecting complicated HTML code.
+
+SelectorsHub is used because:
+
+It auto-generates XPath and CSS selectors for any element.
+It shows all attributes, even hidden ones.
+It highlights when an XPath is wrong or invalid.
+It saves time in creating unique and reliable locators for Selenium automation.
+It also supports Smart XPath, Relative XPath, and AI-based locator suggestions.
