@@ -19,18 +19,27 @@ public class NthProductFlipkart{
         driver.findElement(By.xpath("//input[contains(@placeholder,'Search for Products, Brands and More')]")).click();
         driver.findElement(By.xpath("//input[contains(@placeholder,'Search for Products, Brands and More')]")).sendKeys("Laptop");
         driver.findElement(By.xpath("//input[contains(@placeholder,'Search for Products, Brands and More')]")).sendKeys(Keys.ENTER);
+        System.out.println(driver.findElement(By.xpath("(//div[@class='lvJbLV col-12-12']/div[1]/div[1]/div[1]/a[1])[7]")).getText());
+        System.out.println("------------------------------");
+        
         driver.findElement(By.className("Vy9RSP")).click();
         Thread.sleep(2000);
         driver.findElement(By.className("Vy9RSP")).clear();
         Thread.sleep(2000);
         driver.findElement(By.className("Vy9RSP")).sendKeys("TV");
         driver.findElement(By.className("Vy9RSP")).sendKeys(Keys.ENTER);
+        System.out.println(driver.findElement(By.xpath("(//div[@class='lvJbLV col-12-12']/div[1]/div[1]/div[1]/a[1])[13]")).getText());
+        System.out.println("------------------------------");
+        
         driver.findElement(By.className("Vy9RSP")).click();
         Thread.sleep(2000);
         driver.findElement(By.className("Vy9RSP")).clear();
         Thread.sleep(2000);
         driver.findElement(By.className("Vy9RSP")).sendKeys("Smart Phone");
         driver.findElement(By.className("Vy9RSP")).sendKeys(Keys.ENTER);
+        System.out.println(driver.findElement(By.xpath("(//div[@class='lvJbLV col-12-12']/div[1]/div[1]/div[1]/a[1])[2]")).getText());
+        System.out.println("------------------------------");
+
 //        driver.quit();
     }
 }
