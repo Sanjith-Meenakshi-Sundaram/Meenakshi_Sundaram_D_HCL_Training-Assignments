@@ -22,19 +22,18 @@ public class NthProductFlipkart{
         System.out.println(driver.findElement(By.xpath("(//div[@class='lvJbLV col-12-12']/div[1]/div[1]/div[1]/a[1])[7]")).getText());
         System.out.println("------------------------------");
         
-        driver.findElement(By.className("Vy9RSP")).click();
-        Thread.sleep(2000);
-        driver.findElement(By.className("Vy9RSP")).clear();
-        Thread.sleep(2000);
+        WebElement search = driver.findElement(By.className("Vy9RSP"));
+        search.click();
+        search.sendKeys(Keys.CONTROL + "a");
+        search.sendKeys(Keys.DELETE);
         driver.findElement(By.className("Vy9RSP")).sendKeys("TV");
         driver.findElement(By.className("Vy9RSP")).sendKeys(Keys.ENTER);
         System.out.println(driver.findElement(By.xpath("(//div[@class='lvJbLV col-12-12']/div[1]/div[1]/div[1]/a[1])[13]")).getText());
         System.out.println("------------------------------");
         
-        driver.findElement(By.className("Vy9RSP")).click();
-        Thread.sleep(2000);
-        driver.findElement(By.className("Vy9RSP")).clear();
-        Thread.sleep(2000);
+        search.click();
+        search.sendKeys(Keys.CONTROL + "a");
+        search.sendKeys(Keys.DELETE);
         driver.findElement(By.className("Vy9RSP")).sendKeys("Smart Phone");
         driver.findElement(By.className("Vy9RSP")).sendKeys(Keys.ENTER);
         System.out.println(driver.findElement(By.xpath("(//div[@class='lvJbLV col-12-12']/div[1]/div[1]/div[1]/a[1])[2]")).getText());
