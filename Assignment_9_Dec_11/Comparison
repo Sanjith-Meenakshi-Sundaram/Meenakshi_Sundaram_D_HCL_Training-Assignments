@@ -1,0 +1,2 @@
+CSS is natively supported by browsers like (firefox, chrome, edge) are built to understand css very fast because css is used for styling webpage. so when selenium tries to find the css command, it can easily do.
+whereas xpath is different, browsers do not natively understand xpath. they need seperate xpath engine to 1) traverse the whole DOM 2) Evaluate the xpath 3) Matching the node, so these process make the xpath processing slower.
