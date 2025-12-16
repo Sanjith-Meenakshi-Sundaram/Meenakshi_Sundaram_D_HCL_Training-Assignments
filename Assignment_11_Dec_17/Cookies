@@ -1,0 +1,23 @@
+Cookies are used to store user information in the browser, and Selenium handles cookies to manage sessions, bypass login, and test application behavior effectively.
+
+USES:
+To maintain user login sessions (no need to login again).
+To remember user preferences (language, theme, location).
+To track user behavior for analytics and ads.
+To improve website performance and user experience.
+
+Why Cookies Need to be Handled in Selenium:
+
+Cookies need to be handled to avoid repeated login during automation testing.
+Cookies are handled to maintain user session across different test cases.
+Cookies are handled to test authenticated pages without logging in every time.
+Cookies are handled to clear browser data and test application behavior for a new user.
+Cookies are handled to validate cookie creation, deletion, and expiry.
+
+How to handle it:
+
+driver.manage().getCookies() – Get all cookies
+driver.manage().getCookieNamed("name") – Get a specific cookie
+driver.manage().addCookie(cookie) – Add a cookie
+driver.manage().deleteCookieNamed("name") – Delete a specific cookie
+driver.manage().deleteAllCookies() – Delete all cookies
