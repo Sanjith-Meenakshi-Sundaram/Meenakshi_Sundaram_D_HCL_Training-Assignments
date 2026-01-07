@@ -1,0 +1,88 @@
+1)TDD
+TDD (Test Driven Development) is a software development approach in which tests are written before writing the actual code.
+The development cycle follows the Red – Green – Refactor pattern:
+Steps in TDD:
+Red: Write a test case for a feature that does not exist yet → test fails.
+Green: Write the minimum code required to make the test pass.
+Refactor: Improve and optimize the code while keeping all tests passing.
+
+TDD focuses on writing reliable, maintainable, and bug-free code by validating every module through test cases beforehand.
+
+2)Advantages of TDD:
+1. Better Code Quality
+Code becomes cleaner, more modular, and less complex because every unit is tested before development.
+2. Fewer Bugs & Defects
+Errors are detected early in the development phase, reducing the chances of bugs in production.
+3. High Test Coverage
+Every functionality has a test case, leading to high code coverage.
+4. Easier Refactoring
+Developers can modify or optimize code confidently because tests will catch new issues instantly.
+5. Clear Requirements
+Writing tests first helps clarify the requirements and expected behavior.
+6. Reduced Debugging Time
+Since tests pinpoint failing parts, debugging becomes faster and easier.
+
+3)Disadvantages of TDD:
+1. Time-consuming initially
+Writing test cases before coding takes more time in the beginning.
+2. Requires high skill
+Developers must think logically and understand how to write good test cases. Beginners may struggle.
+3. Tests may become outdated
+If the application changes but tests are not updated, it leads to failing test suites.
+4. Not suitable for UI-heavy projects
+UI/UX screens change frequently, making test-based development difficult.
+5. Increased maintenance
+More test files mean additional maintenance effort as the project grows.
+
+4)Tools used to do TDD:
+Different languages use different TDD tools. Commonly used tools:
+Java:
+JUnit
+TestNG
+Mockito (for mocking objects)
+
+JavaScript/Node.js:
+Jest
+Mocha
+Chai
+
+Python:
+PyTest
+Unittest
+
+C#:
+NUnit
+xUnit
+
+Automation Testing Tools:
+Selenium + TestNG/JUnit
+
+5)What is the use of Property File? Why not read from Excel?
+A Property file (usually .properties or .config) is used to store key-value pairs such as:
+
+Example:
+url=https://example.com
+browser=chrome
+username=admin
+
+Why is Property File used?
+1. Simple key–value storage
+Easy to read and load using Properties class in Java.
+2. Faster to access
+Reading .properties is very fast because it is a lightweight text file.
+3. Easy to maintain
+Updating a value (like browser name) is very simple—no formatting issues.
+4. Less memory usage
+Requires very small processing power compared to Excel.
+5. Ideal for configuration
+Properties are meant for application configuration, not for data storage.
+
+Why Not Read from Excel?
+1. Excel is heavy
+Excel files (.xls, .xlsx) are not meant for configuration. They require libraries like Apache POI to read, which consumes more memory.
+2. Slower to read
+It loads rows, columns, cells—slow for simple config values.
+3. Higher chance of formatting errors
+If someone changes Excel formatting, the automation script may fail.
+4. Not suitable for environment variables
+URLs, passwords, browser names should not be stored in Excel.
